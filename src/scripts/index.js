@@ -50,11 +50,9 @@ function resetGame() {
     state.values.result = 0;
     state.view.score.textContent = state.values.result;
 
-    // Reinicia os timers
     clearInterval(state.actions.timerId);
     clearInterval(state.actions.countDownTimerId);
     
-    // Inicia os timers novamente
     state.actions.timerId = setInterval(randomSquare, 1000);
     state.actions.countDownTimerId = setInterval(countDown, 1000);
 }
