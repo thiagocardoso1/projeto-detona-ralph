@@ -70,6 +70,11 @@
 }
 
 @media screen and (max-width: 500px) {
+    .menu-time, .menu-score, .menu-lives {
+        height: 100%;
+        font-size: 3vw;
+    }
+
     .panel {
         max-width: 100vw;
     }
@@ -77,6 +82,11 @@
     .panel .panel-row {
         width: 100vw;
         flex-basis: 100px;
+    }
+
+    .panel .panel-row .square {
+        height: calc(100vw/3);
+        width: calc(100vw/3);
     }
 }
 
