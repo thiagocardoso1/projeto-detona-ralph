@@ -81,14 +81,14 @@ function addListenerHitBox() {
 }
 
 function playAudioHit() {
-    let acertou = new Audio("../../src/audios/hit.m4a");
+    let acertou = new Audio("./src/audios/hit.m4a");
 
     acertou.volume = 0.1;
     acertou.play();
 }
 
 function plauAudioMiss() {
-    let errou = new Audio("../../src/audios/miss.m4a");
+    let errou = new Audio("./src/audios/miss.m4a");
 
     errou.volume = 0.3;
     errou.play();
